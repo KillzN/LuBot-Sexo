@@ -11,7 +11,7 @@ var handler = async (m, { conn, usedPrefix }) => {
     await conn.reply(m.chat, `*${xowner} Iniciando proceso de eliminación de todos los archivos de sesión, excepto el archivo creds.json...*`, m)
     m.react(rwait)
 
-    let sessionPath = './MvrcoSession/'
+    let sessionPath = './LuBotSession/'
 
     try {
 

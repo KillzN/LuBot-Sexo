@@ -3,7 +3,7 @@ let handler = async (m, { conn }) => {
     let chat = global.db.data.chats[m.chat]
     if (!chat.isBanned) return conn.reply(m.chat, '*🍚 Este chat no esta baneado *', m)
     chat.isBanned = false
-    await conn.reply(m.chat, `*${xowner} MvrcoSexo se activó para este chat.*`, m)
+    await conn.reply(m.chat, `*${xowner} Lu-Boto se activó para este chat.*`, m)
 }
 handler.help = ['unbanchat'];
 handler.tags = ['owner'];

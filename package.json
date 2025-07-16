@@ -1,5 +1,5 @@
 {
-    "name": "MvrcoSexo",
+    "name": "Lu-Boto",
     "version": "3.0.0",
     "description": "WhatsApp Bot Multi Device",
     "main": "main.js",
@@ -18,16 +18,16 @@
         "eslint": "eslint .",
         "eslintfix": "eslint --fix ."
     },
-    "homepage": "https://github.com/KillzN/MvrcoSexo",
+    "homepage": "https://github.com/KillzN/Lu-Boto",
     "author": {
         "name": "Cristian Escobar"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/KillzN/MvrcoSexo.git"
+        "url": "git+https://github.com/KillzN/Lu-Boto.git"
     },
     "bugs": {
-        "url": "https://github.com/KillzN/MvrcoSexo/issues"
+        "url": "https://github.com/KillzN/Lu-Boto/issues"
     },
     "license": "GPL-3.0-or-later",
     "dependencies": {

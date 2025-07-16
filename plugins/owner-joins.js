@@ -10,21 +10,21 @@ let handler = async (m, { conn, text }) => {
         if (!code) return m.reply('*⚠️ enlace inválido.*')
 
         let res = await conn.groupAcceptInvite(code)
-        m.reply(`*✅ MvrcoSex se unió correctamente al grupo.*\n*¡Disfruta del Bot en tu grupo!*`)
+        m.reply(`*✅ Lu-Bot se unió correctamente al grupo.*\n*¡Disfruta del Bot en tu grupo!*`)
 
         /*let groupId = await conn.groupAcceptInvite(code)
         
         let groupMetadata = await conn.groupMetadata(groupId).catch(() => null)
         if (groupMetadata) return m.reply(`*[ 🦈 ] Ya estoy en este grupo.*`)
         
-        m.reply(`*✅ MvrcoSex se unió correctamente al grupo.*\n*¡Disfruta del Bot en tu grupo!*`)*/
+        m.reply(`*✅ Lu-Bot se unió correctamente al grupo.*\n*¡Disfruta del Bot en tu grupo!*`)*/
 
 
         if (expired) {
             expired = Math.min(999, Math.max(1, isNumber(expired) ? parseInt(expired) : 0))
             let chats = global.db.data.chats[res] || (global.db.data.chats[res] = {})
             chats.expired = +new Date() + expired * 1000 * 60 * 60 * 24
-            m.reply(`*⌛ MvrcoSex permanecerá en el grupo durante \`${expired}\` días.*`)
+            m.reply(`*⌛ Lu-Bot permanecerá en el grupo durante \`${expired}\` días.*`)
         }
     } catch {
         return m.reply(`*✖️ Ocurrió un error al entrar al grupo.*`)

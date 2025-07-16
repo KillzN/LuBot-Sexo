@@ -76,7 +76,7 @@ let handler = async (m, { conn, usedPrefix, args, isAdmin, isROwner }) => {
     : users.find(c => c.user?.jid === botJid);
 
   if (!selectedBot) {
-    return conn.reply(m.chat, `✧ El número que mencionaste no es un bot activo de *MvrcoSexo*.\n\nUsa *#bots* para ver los bots disponibles.`, m);
+    return conn.reply(m.chat, `✧ El número que mencionaste no es un bot activo de *Lu-Boto*.\n\nUsa *#bots* para ver los bots disponibles.`, m);
   }
 
   // Verificar que el usuario tenga permiso (admin del grupo o global.owner)

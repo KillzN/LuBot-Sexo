@@ -50,7 +50,7 @@ async function handler(m, { conn: stars, usedPrefix }) {
   global.totalUsers = users.length
 
   const responseMessage = `
-*MVRCOSEX - JADIBOT LIST*
+*Lu-Bot - JADIBOT LIST*
 > *Total de Subs:* *\`${totalUsers || 0}\`*
 
 ${message || '*No hay Subs activos.*'}`.trim()

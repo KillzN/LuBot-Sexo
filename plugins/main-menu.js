@@ -29,7 +29,7 @@ let handler = async (m, { conn, usedPrefix, text, command }) => {
         const partner = isMarried ? global.db.data.marriages[userId] : null;
         const partnerName = partner ? await conn.getName(partner) : 'Nadie';
 
-        const imageUrl = 'https://files.catbox.moe/091d8i.jpg';
+        const imageUrl = 'https://files.catbox.moe/dtfvzc.jpg';
 
         // Ahora usamos userId para mostrar en el menú
         let menu = `
