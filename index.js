@@ -46,7 +46,7 @@ say('KILL\nSEXO', {
   align: 'center',
   gradient: ['red', 'magenta']
 });
-say(`Sigueme en ig: @ineffable.mvrco`, {
+say(`Sigueme en ig como @ineffable.mvrco`, {
   font: 'console',
   align: 'center',
   gradient: ['red', 'magenta']
@@ -186,7 +186,7 @@ if (!fs.existsSync(`./${sessions}/creds.json`)) {
       } else {
         do {
 
-          phoneNumber = await question(chalk.bgBlack(chalk.bold.redBright(`Por favor, Ingresa el número de WhatsApp\n${chalk.bold.blueBright("Copia el número de WhatsApp y péguelo en la consola.")}\n${chalk.bold.blueBright("Ejemplo: 543704518876")}\n${chalk.bold.magentaBright('---> ')}`)))
+          phoneNumber = await question(chalk.bgBlack(chalk.bold.redBright(`Por favor, Ingresa el número de WhatsApp\n${chalk.bold.blueBright("Copia el número de WhatsApp y péguelo en la consola.")}\n${chalk.bold.blueBright("Ejemplo: 56983073328")}\n${chalk.bold.magentaBright('---> ')}`)))
 
           phoneNumber = phoneNumber.replace(/\D/g, '')
           if (!phoneNumber.startsWith('+')) {
@@ -231,7 +231,7 @@ async function connectionUpdate(update) {
     }
   }
   if (connection == 'open') {
-    console.log(chalk.bold.greenBright(`\n❒⸺⸺⸺⸺【• CONECTADO •】⸺⸺⸺⸺❒\n│\n│ ✅ Se ha conectado exitosamente.\n│\n❒⸺⸺⸺⸺【Pᴏʀɴʜᴜʙ: @BʏKɪʟʟᴢN】⸺⸺⸺⸺❒`))
+    console.log(chalk.bold.greenBright(`\n❒⸺⸺⸺⸺【• CONECTADO •】⸺⸺⸺⸺❒\n│\n│ ✅ Se ha conectado exitosamente.\n│\n❒⸺⸺⸺⸺【• @𝖎𝖓𝖊𝖋𝖋𝖆𝖇𝖑𝖊.𝖒𝖛𝖗𝖈𝖔 •】⸺⸺⸺⸺❒`))
   }
   let reason = new Boom(lastDisconnect?.error)?.output?.statusCode
   if (connection === 'close') {
@@ -300,7 +300,7 @@ global.reloadHandler = async function (restatConn) {
 
 global.rutaJadiBot = join(__dirname, './JadiBots')
 
-if (global.MvrcoJadibts) {
+if (global.shadowJadibts) {
   if (!existsSync(global.rutaJadiBot)) {
     mkdirSync(global.rutaJadiBot, { recursive: true })
     console.log(chalk.bold.cyan(`La carpeta: ${jadi} se creó correctamente.`))
